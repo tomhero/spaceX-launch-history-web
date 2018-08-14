@@ -288,3 +288,26 @@ section.nav-bar > img {
         margin-top: 0em;
     }
 }
+
+@media screen and (min-width: 2560px) {
+    section.nav-bar {
+        font-size: 3rem;
+    }
+
+    section.nav-bar > img {
+        width: 10%;
+    }
+
+    section.container > div.lastest-launch {
+        font-size: 2.75rem;
+    }
+
+    section.container > div.lastest-launch > .launch-data {
+        background-color: $last-bg-color;
+        font-size: 3rem;
+    }
+
+    .launch-history {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
