@@ -20,6 +20,9 @@ $(document).ready(() => {
 
     function makeLaunchElement(data) {
         const launchResult = data.launch_success === true ? 'success' : 'fail'
+        if (data.details === null) {
+            data.details = '-'
+        }
         return `<div class="launch-data">
                     <h3 class="mission-name"> ${data.mission_name}
                         <span class="launch-year"> ${data.launch_year} </span>
